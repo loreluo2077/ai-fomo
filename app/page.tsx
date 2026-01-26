@@ -1,3 +1,4 @@
+
 import { FeatureCard } from "@/components/FeatureCard";
 import { Footer } from "@/components/Footer";
 import { StatPill } from "@/components/StatPill";
@@ -73,3 +74,4 @@ export default function Home() {
     </main>
   );
 }
+
