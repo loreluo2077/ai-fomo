@@ -1,12 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 
 export const FragmentComposer = () => {
   const [text, setText] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (!text.trim()) {
       return;
@@ -39,7 +39,7 @@ export const FragmentComposer = () => {
       <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
         <textarea
           className="min-h-[120px] w-full rounded-2xl border border-slate-200 px-4 py-3 text-sm text-slate-700 shadow-sm focus:border-indigo-400 focus:outline-none"
-          placeholder=""Everyone shipped a new AI agent. Are we late?""
+          placeholder="Everyone shipped a new AI agent. Are we late?"
           value={text}
           onChange={(event) => setText(event.target.value)}
         />
