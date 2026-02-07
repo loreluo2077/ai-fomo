@@ -164,7 +164,7 @@ export const addAgree = (fragmentId: string): Fragment | undefined => {
   }
   return fragment;
 };
-=======
+
 export const heroHighlights = [
   "Track trending AI launches",
   "Monitor confidence signals",
@@ -194,4 +194,3 @@ export const featureCards = [
       "Capture why you followed or skipped a signal and learn from the outcome."
   }
 ];
-
